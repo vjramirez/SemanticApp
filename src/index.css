@@ -1,0 +1,456 @@
+ /* index.css */
+
+ /*----------- CLASES VARIADAS -------------*/
+
+ .machine_card_consult:hover{
+     border: 5px solid #ec407a;
+ }
+
+ .machine_card_insert:hover{
+     border: 5px solid #66bb6a;
+ }
+
+.italic{
+    font-style: italic;
+}
+
+.img-maq{
+    width: 100%;
+}
+
+ .height-big{
+	 height: 120px;
+ }
+
+[type="radio"]:checked+label .my-green{
+	 color: #2E7D32 !important;
+ }
+
+[type="radio"]:checked+label .my-red{
+	 color: #C62828 !important;
+ }
+
+.padding{
+	padding: 1%;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.topMargin{
+	margin-top: 4%;
+}
+
+.margin-top{
+	margin-top: 15px;
+}
+
+.margin-bottom{
+	margin-bottom: 10px;
+}
+
+.bold{
+	font-weight: 480;
+}
+/*.form-info{
+	color: blue;
+}*/
+
+.margin-left-data{
+	margin: auto;
+    width: 50%;
+}
+
+.margin-left{
+	margin-left: 10px !important;
+}
+
+.margin-left-big{
+	margin-left: 20px !important;
+}
+
+
+.container{
+	width: 80%;
+}
+
+/*.card-panel{
+	padding: 0;
+}*/
+
+.card .card-content{
+	width: 100%;
+}
+
+.loading{
+	width: 10%;
+}
+
+#number {
+  width: 2.5em;
+}
+
+.infoTabs{
+	padding:5px;
+}
+
+.no-pointer{
+	cursor: context-menu;
+}
+
+.collapsible-body{
+	background-color: white  ;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+circle {
+   r: 3;
+}
+
+/*--------------- DATE PICKER -------------*/
+
+.picker__year-display{
+	background-color:#1565c0;
+}
+
+.picker__date-display{
+	background-color:#1e88e5;
+}
+
+.picker__weekday-display {
+	background-color:#1e88e5;
+}
+
+.picker__close, .picker__today {
+	color: #1e88e5;
+}
+
+.picker__day.picker__day--today{
+	color: #1e88e5;
+}
+
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected{
+	background-color:#1e88e5;
+}
+
+.picker__input.picker__input--active{
+	border-color: #1565c0;
+}
+
+
+/*--------------- TABS ---------------*/
+
+.row .col.s12 {
+    margin-top: 0.7rem;
+}
+
+.tabs .tab a{
+    color: #1e88e5;
+}
+
+.tabs .tab a:hover,.tabs .tab a.active {
+	background-color: transparent;
+	color: #135bac;
+	font-weight: 480;
+}
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+	color:grey;
+}
+.tabs .indicator {
+	background-color: #1565c0;
+}
+
+/*------------- SENSORES EN MAPA: EXTRUSORA 4 ZONAS ------------*/
+
+.mapContainer{
+	position: relative;
+}
+
+.mapContainer img{
+	width: 100%;
+}
+
+.sensorDiv{
+	position: absolute;
+	width: 4%;
+	height: 5%;
+	/*opacity: 0.4;*/
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 50%;
+	/*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.sensorDivSelected{
+	position: absolute;
+	width: 4%;
+	height: 5%;
+	opacity: 1;
+	cursor: pointer;
+	border: 2px solid white;
+	border-radius: 25%;
+	/*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.iconDiv{
+	position: absolute;
+	width: 8%;
+	height: 8%;
+}
+
+/* ------- Columna Zona 1 ------- */
+
+.zone1{
+    left: 48%;
+}
+
+/* ------- Columna Zona 2 ------- */
+
+.zone2{
+    left: 62.5%;
+}
+
+/* ------- Columna Zona 3 ------- */
+
+.zone3{
+    left: 77%;
+}
+
+/* ------- Columna Zona 4 ------- */
+
+.zone4{
+    left: 91%;
+}
+
+/*------ Temperatura por zonas -------*/
+
+.tempIcon{
+	top: 17%;
+	left: 38%;
+}
+
+.TemperatureSensor{
+    background-color: rgba(236, 13, 13, 0.8);
+    top: 19%;
+}
+
+/*------ Resistencia por zonas -------*/
+
+.resistIcon{
+	top: 29.5%;
+	left: 37%;
+}
+
+.ResistanceSensor{
+    top: 32%;
+    background-color: rgba(236, 99, 13, 0.8);
+}
+
+/*------ Ventilación por zonas -------*/
+
+.ventIcon{
+	top: 41.5%;
+	left: 37%;
+}
+
+.VentilationSensor{
+    background-color: rgba(225, 236, 13, 0.8);
+    top: 44%;
+}
+
+/*------ RPM del motor -------*/
+
+.rpmIcon{
+	top: 82%;
+	left: 7%;
+}
+
+.EngineRPMSensor{
+	top: 85%;
+	left: 17%;
+	background-color: rgba(28, 180, 35, 0.8);
+}
+
+/*------ Consumo del motor -------*/
+
+.consumoIcon{
+	top: 82%;
+	left: 25%;
+}
+
+.EngineConsumptionSensor{
+	top: 85%;
+	left: 35%;
+	background-color: rgba(70, 135, 199, 0.8);
+}
+
+/*------ Presión -------*/
+
+.presionIcon{
+	top: 82%;
+	left: 42%;
+}
+
+.PressureSensor{
+	top: 85%;
+	left: 51%;
+	background-color: rgba(181, 27, 201, 0.8);
+}
+
+/*------ Temperatura de fundido -------*/
+
+.tempFundidoIcon{
+	top: 82%;
+	left: 59%;
+}
+
+.MeltingTemperatureSensor{
+	top: 85%;
+	left: 68%;
+	background-color: rgba(246, 105, 215, 0.8);
+}
+
+/*-------------- FORMS CUSTOM COLORS --------------*/
+
+.form{
+	margin-left: 5%;
+}
+
+.form-collap{
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top:2%;
+	padding-bottom: 2%;
+}
+
+.label{
+	font-size: 16px;
+	color: #bdbdbd;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field input[type=tel]:focus + label {
+   color: #1565c0;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=tel]:focus{
+    border-bottom: 1px solid #1976d2;
+    box-shadow: 0 1px 0 0 #1976d2;
+}
+
+.input-field input[type=text].error{
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+
+[type="checkbox"]+label{
+	color: grey;
+}
+
+input[type="checkbox"].filled-in:checked + label{
+    color: #424242;
+}
+
+input[type="checkbox"].filled-in:checked + label:after{
+     border: 2px solid #424242;
+     background-color: #424242;
+}
+
+input[type="checkbox"].filled-in {
+     border: 2px solid grey;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+	color: grey;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+	font-size: 14px;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #1565c0;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after{
+	background-color: #1565c0;
+}
+
+.switch label input[type=checkbox]:checked+.lever{
+	background-color: #42a5f5;
+}
+
+.rc-slider-track{
+	/* background-color: #90caf9 !important; */
+	background-color: rgba(21,101,192,0.5) !important;
+}
+
+.rc-slider-disabled .rc-slider-track{
+	/* background-color: #90caf9 !important; */
+	background-color: #ccc !important;
+}
+
+.rc-slider-handle{
+	border-color: #1565c0 !important;
+}
+
+.rc-slider-disabled .rc-slider-handle{
+	border-color: #ccc !important;
+}
+
+[type="radio"]:checked+label{
+	color:black;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after{
+	border: 2px solid #1565c0;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after{
+	background-color: #1565c0;
+}
+
+/*
+// label color
+.input-field label {
+    color: #000;
+}
+
+// valid color
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+// invalid color
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+*/
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+	border-bottom: 1px solid #1976d2;
+    box-shadow: 0 1px 0 0 #1976d2;
+}
+
+input[type=number].error{
+	border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+
+
+-------------------------- Icon in the middle -------------
+
+.middle {
+    display: inline-flex;
+    vertical-align: middle;
+}
