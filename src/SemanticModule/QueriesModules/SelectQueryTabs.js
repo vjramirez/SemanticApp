@@ -11,6 +11,7 @@ import {Icon, Card, Input, Row, Tabs, Tab} from 'react-materialize'
 import {InformationQueryForm} from './InformationQuery.js'
 import {OtroSensorQueryForm} from './OtroSensorQuery.js'
 import {AnomaliasQueryForm} from './AnomaliasQuery.js'
+import {DataDownloadQueryForm} from './DataDownloadQuery.js'
 
 export class PruebaTabsMat extends React.Component {
 
@@ -53,6 +54,12 @@ export class PruebaTabsMat extends React.Component {
 					</Tab>
 					<Tab title="Relation" className={otroClassNames}>
 						<OtroSensorQueryForm
+										selectedSensors={selectedSensors}
+										getOtherSensorQuery={(k,a,v,f) => {this.props.getOtherSensorQuery(k,a,v,f);}}
+							infoSensores={this.props.infoSensores}/>
+					</Tab>
+					<Tab title="Data Download" className={inforClassNames}>
+						<DataDownloadQueryForm
 										selectedSensors={selectedSensors}
 										getOtherSensorQuery={(k,a,v,f) => {this.props.getOtherSensorQuery(k,a,v,f);}}
 							infoSensores={this.props.infoSensores}/>

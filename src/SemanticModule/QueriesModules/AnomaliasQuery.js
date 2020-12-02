@@ -297,8 +297,8 @@ export class AnomaliasQueryForm extends React.Component{
 
 		const select = (selectedSensors.length > 1)
 			? (<Input s={12} l={6} type='select' defaultValue='predef' onChange={(e) => {this.handleSelectChange(e);}}>
-					<option value='predef'>Predefined relation</option>
-					<option value='custom'>Customized relation</option>
+					<option value='predef'>Predefined correlation</option>
+					<option value='custom'>Customized correlation</option>
 				</Input>)
 			: (null);
 
@@ -311,7 +311,7 @@ export class AnomaliasQueryForm extends React.Component{
 			const parMotor = (sensorId === parMotorId) &&
 				(<Col>
 						<Input name='filterValue' type='checkbox' className='filled-in'
-							label="Calcular Par Motor"
+							label="Calculate Motor Torque"
 							onChange={(e) => {this.handleParMotorChecked(e);}}
 						/>
 					</Col>);
@@ -413,7 +413,7 @@ export class AnomaliasQueryForm extends React.Component{
 						<Icon>add</Icon>
 					</Button>
 					<span className='green-text text-darken-3 margin-left'>
-						Add predefined anomaly.
+						Add this config to predefined correlation library.
 					</span>
 				</div>);
 
@@ -469,7 +469,7 @@ export class AnomaliasQueryForm extends React.Component{
 					</Row>
 					<Row s={12}>
 					 	<p className='blue-text text-darken-3'>
-							Relation that must hold between the sensors:
+							Correlation that must hold between the sensors:
 						</p>
 					 </Row>
 					{selectedRelType}

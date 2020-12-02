@@ -112,6 +112,12 @@
 
 .collapsible-body{
 	background-color: white  ;
+	padding-bottom: 0rem;
+	padding-top: 1rem;
+}
+
+.collapsible-header{
+	background-color: rgb(212, 233, 255) ;
 }
 
 .hidden{
@@ -575,4 +581,19 @@ input[type=number].error{
   line-height: 1.4;
   padding: .75em;
   text-align: center;
+}
+
+/*new classes 2020-11-23 */
+.tabSpace {
+	margin-left: 30px !important;
+}
+
+.overLine {
+	text-decoration: overline;
+}
+
+.card-title {
+	font-size: 14px !important;
+	margin-top: -10px !important;
+	font-weight: 480 !important;
 }
