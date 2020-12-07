@@ -22,7 +22,7 @@ const _ = require('lodash');
 const virtuosoLocalURL = 'http://localhost:8890/sparql';
 const virtuosoDebianURL = 'http://35.224.159.30:8890/sparql'; // Cambia cada vez que se inicia la máquina
 const virtuosoIraURL = 'http://158.227.115.72/:8890/sparql';
-const usedURL = virtuosoLocalURL;
+const usedURL = virtuosoIraURL;
 
 const graphURI = "<http://bdi.si.ehu.es/bdi/ontologies/extrusion/sensors#>";
 

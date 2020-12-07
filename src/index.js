@@ -37,7 +37,7 @@ class SelectedPage extends React.Component {
 					loaded : true
 				})
 
-			},3000)
+			},8001)
 		}
 	}
 
